@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "laravel-elixir-rjs": "^1.0.1"
+  },
+  "dependencies": {
+    "laravel-elixir": "^3.0.0",
+    "bootstrap-sass": "^3.0.0"
+  },
+  "jshintConfig": {
+    "unused": true,
+    "undef": true,
+    "strict": "implied",
+    "funscope": true,
+    "browser": true,
+    "devel": true,
+    "browserify": true,
+    "globals": {
+        "define": false
+    }
+  }
+}
