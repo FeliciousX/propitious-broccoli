@@ -17,7 +17,9 @@
     "devel": true,
     "browserify": true,
     "globals": {
-        "define": false
+        "define": false,
+        "require": false,
+        "requirejs": false
     }
   }
 }

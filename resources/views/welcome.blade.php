@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Laravel</title>
+        <script type="text/javascript" data-main="js/app" src="{{ asset('js/lib/requirejs/require.js') }}"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 

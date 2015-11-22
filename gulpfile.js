@@ -1,5 +1,4 @@
 /* jshint strict:false */
-var config = require('./config');
 var elixir = require('laravel-elixir');
 require('laravel-elixir-rjs');
 
@@ -15,12 +14,8 @@ require('laravel-elixir-rjs');
  */
 
 elixir(function(mix) {
-    config.libraries.forEach( function( file) {
-        mix.copy( config.constants.library_input + file,
-                config.constants.library_output + file );
-    });
-
+    mix.copy('resources/assets/js/lib/requirejs/require.js', 'public/js/lib/requirejs/require.js');
     mix.rjs('app.js', 'resources/assets/js', 'public/js', {
-        include: ['requirejs', 'underscore']
+        out: "app.js"
     });
 });
